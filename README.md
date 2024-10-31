@@ -1,1 +1,1 @@
-https://timut2.github.io/rsschool-cv/cv
+https://timut2.github.io/rsschool-html/
