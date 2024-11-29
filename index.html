@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timur Polenov CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <h1>Timur Polenov</h1>
+            <p>Fullstack Developer</p>
+        </header>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Phone:</strong> +79859048038</li>
+                <li><strong>Telegram:</strong> @polenovt</li>
+                <li><strong>Email:</strong> Timur.polenov@gmail.com</li>
+            </ul>
+        </section>
+        <section class="self-intro">
+            <h2>Brief Self-Introduction</h2>
+            <p>I am interested in improving my knowledge and abilities in web development.</p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
+        <section class="code-example">
+            <h2>Code Example</h2>
+            <pre><code>
+                import './App.css';
+                import Header from './Components/Header';
+                import Main from './Components/Main';
+                import Footer from './Components/Footer';
+                import Puzzle from './Components/Puzzle'; // Importing component
+                import { useState } from 'react';
+                function App() {
+                  const [isPuzzleSolved, setIsPuzzleSolved] = useState(false); // State to control puzzle solution<br>
+                  return (
+                    &lt;div&gt;
+                      {!isPuzzleSolved ? (
+                        &lt;Puzzle onSolve={ () =&gt; setIsPuzzleSolved(true)} /&gt; // Passing function to solve puzzle<br>
+                      ) : (
+                        &lt;&gt;
+                          &lt;Header /&gt;
+                          &lt;div className="main-container"&gt;
+                            &lt;Main /&gt;
+                            &lt;Main /&gt;
+                            &lt;Main /&gt;
+                            &lt;Main /&gt;
+                          &lt;/div&gt;
+                          &lt;Footer /&gt;
+                        &lt;&gt;
+                      )}
+                    &lt;/div&gt;
+                  );
+                }
+                export default App;
+                </code></pre>
+        </section>
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>Created online reports for Laboratory using SQL and JavaScript.</li>
+                <li>Currently working in a company that provides technical support for government projects.</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's in Informatics and Computer Science - Moscow Power Engineering Institute.</li>
+                <li>Master's in Applied Informatics - Moscow University (S.Y. Witte).</li>
+            </ul>
+        </section>
+        <section class="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian Native</li>
+                <li>English B2</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
